@@ -176,7 +176,7 @@ function setupResetButton() {
 function init() {
     setupGenerateButton();
     renderCarousel();
-    setupResetButton(); // ✅ ALWAYS run this
+    setupResetButton(); 
 
     if (document.getElementById("collection")) {
         renderCollection();
