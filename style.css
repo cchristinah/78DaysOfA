@@ -1,0 +1,214 @@
+body{
+    font-size: 16px;
+    word-spacing: 0.07em;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-title {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "aileron";
+  font-weight: 400;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+nav a, a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "aileron";
+  font-weight: 400;
+}
+
+a:hover{
+    color: #a9a9a9;
+}
+
+.carousel{
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 300s linear infinite;
+}
+
+.carousel-track img {
+    height: 80px; 
+    margin-right: 2em;
+    margin-top: 1em;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.layout{
+    display: flex;
+    height: calc(100vh - 120px);
+}
+
+.left{
+    width: 40%;
+    padding: 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    gap: 2em;
+}
+
+.right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-collection{
+    width: 100%;
+
+}
+
+.right-about{
+    font-family: "aileron";
+    font-weight: 100;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: calc(100vh - 120px)
+}
+.title{
+    font-family: "aileron";
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+}
+
+
+button {
+    font-family: "aileron";
+    font-weight: 400;
+    border: none;
+    font-size: 1.25em;
+    padding: 1.25em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: -15em;
+
+    
+}
+#result img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.caption {
+    font-family: "aileron";
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 2em;
+    color: #000000;
+    font-style: italic;
+}
+
+#collection{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em;
+}
+
+.category-items {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    text-align: center;
+    width: 200px;
+}
+
+.collection-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.collection-item p {
+    text-align: center;
+    font-family: "aileron";
+    font-weight: 400;
+    font-style: italic;
+}
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-title {
+    font-family: "aileron";
+    font-weight: 400;
+    font-size: 2em;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "aileron";
+    font-weight: 400;
+}
+
